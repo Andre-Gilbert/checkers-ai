@@ -1,4 +1,5 @@
 """Checkers board."""
+
 from typing import Generator
 
 import pygame
@@ -97,6 +98,7 @@ class CheckersBoard:
 
     def winner(self) -> pygame.Color | None:
         """Returns the winner if they exist, otherwise None."""
+
         # Check if all pieces are blocked
         red_possible_moves = {}
         for piece in self.get_pieces_by_color(Player.HUMAN):
